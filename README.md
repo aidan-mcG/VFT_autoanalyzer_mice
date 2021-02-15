@@ -7,9 +7,11 @@ The second code, updown_timepoints_code, is able to operate on multiple groups b
 
 RStudio is reccomended
 
+The functions work on skinny data: one column should be called vft_t and contain the xs and os (doesn't matter between upper and lower case). A second column should be called group and contain a string that denotes the experimental group the mouse belongs to. Nothing else should be required.
+
 To use the code: 
 1. Load the packages required
-2. Load your data as a csv file (read.csv() or xlsx file). 
+2. Load your data as a csv file (read.csv() or xlsx file).
 3. Define your groups using the provided groups vector. Place each group name in quotes
 4. Run the rest of the code in the file you are using to load the plots 
 5. Call the function makegraphs() on your data 
