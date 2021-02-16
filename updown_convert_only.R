@@ -1,11 +1,10 @@
-library(plyr)
-library(dplyr)
-library(ggplot2)
-library(readxl)
-library(tidyverse)
-library(broom)
-
 converter <- function(){
+   require(plyr)
+   require(dplyr)
+   require(ggplot2)
+   require(readxl)
+   require(tidyverse)
+   require(broom)
       fname <- file.choose()
       data <- read_excel(fname)
       data_processing <- sapply(data, tolower)
